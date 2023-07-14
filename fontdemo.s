@@ -42,7 +42,6 @@ main:
 	sta PARAML0
 	lda #0
 	jsr setPalette
-;	jsr initSCBs
 
 	; Move demo code into bank 2 where it's safe to execute
 	lda #returnToProDOS
@@ -113,23 +112,6 @@ copyBytesDest2:
 	sta $010000,x
 	BITS16
 	bra copyBytesEven
-
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-; initSCBs
-; Initialize all scanline control bytes
-; Trashes A,X
-
-initSCBs:
-	lda #0
-	ldx #$0100	;set all $100 scbs to A
-
-initSCBsLoop:
-	dex
-	dex
-	sta $e19cfe,x
-	bne initSCBsLoop
-	rts
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

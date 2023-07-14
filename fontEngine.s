@@ -84,7 +84,7 @@ renderChar:
 	FASTGRAPHICS
 
 renderCharBounce:		; Self modifying code. Don't panic
-	jmp (font16characterJumpTable,x)
+	jmp ($1234,x)
 
 renderCharJumpReturn:	; Compiled glyphs jump back here. Can't rts because stack is turboborked
 	SLOWGRAPHICS
