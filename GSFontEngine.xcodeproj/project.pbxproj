@@ -6,10 +6,23 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXFileReference section */
+		701E70852A60AA380030C35D /* CompileFont.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = CompileFont.py; sourceTree = "<group>"; };
+		701E70862A60AA380030C35D /* fontEngine.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = fontEngine.s; sourceTree = "<group>"; };
+		701E70872A60AA380030C35D /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		701E70882A60AB6E0030C35D /* fontdemo.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = fontdemo.s; sourceTree = "<group>"; };
+		701E70892A60ABFD0030C35D /* macros.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = macros.s; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
 /* Begin PBXGroup section */
 		701E707A2A60AA220030C35D = {
 			isa = PBXGroup;
 			children = (
+				701E70882A60AB6E0030C35D /* fontdemo.s */,
+				701E70862A60AA380030C35D /* fontEngine.s */,
+				701E70852A60AA380030C35D /* CompileFont.py */,
+				701E70892A60ABFD0030C35D /* macros.s */,
+				701E70872A60AA380030C35D /* Makefile */,
 			);
 			sourceTree = "<group>";
 		};
